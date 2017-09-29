@@ -91,6 +91,10 @@ hold on
 plot(t,s_vp,'Color',[.7 .7 .7],'LineWidth',3);
 plot(t,s_vd,'k','LineWidth',3);
 for i=1:length(comps);
+    if i>12;
+        disp('stopping at 12 components.. no more colours have been defined.');
+        break
+    end
     plot(t,s_vp_u(1,:,i),'Color',figcol(i,:));
 end
 hold off
