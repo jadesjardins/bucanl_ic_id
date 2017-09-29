@@ -32,6 +32,8 @@
 
 function eegplugin_icID(fig,try_strings,catch_strings)
 
+%% start up
+addpath(genpath(fileparts(which('eegplugin_icID.m'))));
 
 % find EEGLAB plot menu.
 % ---------------------
